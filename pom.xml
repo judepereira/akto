@@ -42,7 +42,11 @@
 
     <build>
         <plugins>
-
+            <plugin>
+                <groupId>io.bluecave</groupId>
+                <artifactId>bluecave-maven-plugin</artifactId>
+                <version>0.1.0</version>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
