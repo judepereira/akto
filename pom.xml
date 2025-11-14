@@ -45,7 +45,7 @@
             <plugin>
                 <groupId>io.bluecave</groupId>
                 <artifactId>bluecave-maven-plugin</artifactId>
-                <version>0.1.0</version>
+                <version>0.1.2</version>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
