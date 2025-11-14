@@ -1,4 +1,4 @@
-name: Analyze and report coverage to Blue Cave
+name: Blue Cave
 
 on:
   push:
@@ -30,8 +30,8 @@ jobs:
         with:
           setup_only: true
 
-      - name: Build with Gradle Wrapper
-        run: mvn test
+      - name: Compile
+        run: mvn compile
 
       - name: Analyze and Report Coverage to Blue Cave
         env:
