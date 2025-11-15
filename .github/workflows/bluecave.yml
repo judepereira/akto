@@ -8,7 +8,7 @@ on:
 
 jobs:
   bluecave-report:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: (github.actor != 'dependabot[bot]')
     permissions:
       contents: read
@@ -31,7 +31,7 @@ jobs:
           setup_only: true
 
       - name: Compile
-        run: mvn compile
+        run: mvn test
 
       - name: Analyze and Report Coverage to Blue Cave
         env:
