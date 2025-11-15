@@ -30,10 +30,18 @@ jobs:
         with:
           setup_only: true
 
-      - name: Compile
-        run: mvn -B test
+      - name: Run Tests
+        run: mvn --no-transfer-progress -B test
+
+      - name: Debug tests
+        run: |
+          ls -hall target/site/jacoco || true
+          tree target/site/jacoco || true
+          ls -hall target || true
+          tree target || true
 
       - name: Analyze and Report Coverage to Blue Cave
+        continue-on-error: true
         env:
           BLUECAVE_TOKEN: ${{ secrets.BLUECAVE_TOKEN }}
           PR_SHA: ${{ github.event.pull_request.head.sha }}
