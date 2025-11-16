@@ -45,7 +45,7 @@
             <plugin>
                 <groupId>io.bluecave</groupId>
                 <artifactId>bluecave-maven-plugin</artifactId>
-                <version>0.1.2</version>
+                <version>0.1.3</version>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -111,9 +111,9 @@
 					</execution>
 				</executions>
 				<configuration>
-<!--                    <destFile>${jacoco.reportPath}</destFile>-->
-<!--                    <dataFile>${jacoco.reportPath}</dataFile>-->
-<!--                    <append>true</append>-->
+                    <destFile>${jacoco.reportPath}</destFile>
+                    <dataFile>${jacoco.reportPath}</dataFile>
+                    <append>true</append>
 				</configuration>
             </plugin>
             <plugin>

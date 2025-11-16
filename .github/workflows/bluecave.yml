@@ -31,16 +31,7 @@ jobs:
           setup_only: true
 
       - name: Run Tests
-        run: mvn --no-transfer-progress -B verify
-
-      - name: Debug tests
-        run: |
-          ls -hall target/site/jacoco || true
-          tree target/site/jacoco || true
-          ls -hall target || true
-          tree target || true
-          find . -name *.xml
-          find . -name jacoco
+        run: mvn --no-transfer-progress -B test
 
       - name: Analyze and Report Coverage to Blue Cave
         continue-on-error: true
