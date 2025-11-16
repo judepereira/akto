@@ -31,7 +31,7 @@ jobs:
           setup_only: true
 
       - name: Run Tests
-        run: mvn --no-transfer-progress -B test
+        run: mvn --no-transfer-progress -B test jacoco:report
 
       - name: Debug tests
         run: |
