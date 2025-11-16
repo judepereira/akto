@@ -39,6 +39,7 @@ jobs:
           tree target/site/jacoco || true
           ls -hall target || true
           tree target || true
+          find . -name *.xml
 
       - name: Analyze and Report Coverage to Blue Cave
         continue-on-error: true
