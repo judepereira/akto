@@ -101,11 +101,6 @@
 						<goals>
 							<goal>report</goal>
 						</goals>
-                        <configuration>
-                            <formats>
-                                <format>XML</format>
-                            </formats>
-                        </configuration>
 					</execution>
 					<execution>
 						<id>post-unit-test</id>
@@ -116,9 +111,9 @@
 					</execution>
 				</executions>
 				<configuration>
-                    <destFile>${jacoco.reportPath}</destFile>
-                    <dataFile>${jacoco.reportPath}</dataFile>
-                    <append>true</append>
+<!--                    <destFile>${jacoco.reportPath}</destFile>-->
+<!--                    <dataFile>${jacoco.reportPath}</dataFile>-->
+<!--                    <append>true</append>-->
 				</configuration>
             </plugin>
             <plugin>
